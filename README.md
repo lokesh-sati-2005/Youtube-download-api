@@ -1,111 +1,101 @@
-# YouTube Download API
+# MediaFlow
 
-A production-oriented Python backend service built with Flask that enables downloading YouTube videos through REST APIs. The project focuses on backend engineering concepts such as request handling, API design, modular architecture, file processing, and scalable service development.
+> A backend-first multi-platform media processing platform built to explore real-world backend engineering.
+
+MediaFlow is a personal engineering project focused on applying modern backend development concepts to a practical application.
+
+Instead of treating this as a one-time project, MediaFlow evolves continuously as new backend technologies, architectural patterns, and engineering practices are learned.
+
+Every major update introduces a new concept and integrates it into the existing system rather than creating isolated tutorial projects.
 
 ---
 
-## Features
+## Current Features
 
-- Download YouTube videos using a URL
-- Retrieve available video formats and resolutions
-- Download audio-only or video files
-- RESTful API architecture
-- Modular service-based backend structure
-- Input validation and structured error handling
-- Download history support (planned)
-- Background processing support (planned)
+- Multi-platform media URL analyzer
+- Media metadata extraction
+- Download queue interface
+- Download history
+- Responsive dashboard
+- REST API integration
+- Modern SaaS interface
+
+---
+
+## Learning Roadmap
+
+As this project evolves, new backend concepts will be integrated into the platform.
+
+### Authentication
+- JWT Authentication
+- Refresh Tokens
+- Role-Based Access Control
+
+### API Development
+- FastAPI
+- API Versioning
+- Request Validation
+- Exception Handling
+
+### Database
+- PostgreSQL
+- SQLAlchemy
+- Alembic Migrations
+
+### Asynchronous Processing
+- Redis
+- Celery
+- Background Tasks
+
+### Real-Time Communication
+- WebSockets
+- Live Job Progress
+
+### DevOps
+- Docker
+- Docker Compose
+- NGINX
+- CI/CD
+
+### Performance
+- Redis Caching
+- Pagination
+- Rate Limiting
+- Query Optimization
+
+### Monitoring
+- Logging
+- Health Checks
+- Metrics
+- Error Tracking
 
 ---
 
 ## Tech Stack
 
+### Frontend
+
+- React
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- React Query
+
 ### Backend
 
 - Python
-- Flask
-- yt-dlp
-- REST APIs
-
-### Future Enhancements
-
-- FastAPI Migration
-- PostgreSQL
-- JWT Authentication
-- Redis
-- Celery
-- Docker
-- WebSocket Progress Updates
+- FastAPI (In Progress)
+- PostgreSQL (Planned)
+- Redis (Planned)
+- Celery (Planned)
+- Docker (Planned)
 
 ---
 
-## Project Structure
+## Development Philosophy
 
-```
-youtube-download-api/
+This repository serves as a long-term engineering portfolio.
 
-├── app.py
-├── requirements.txt
-├── README.md
-├── routes/
-├── services/
-├── utils/
-├── downloads/
-└── static/
-```
+Rather than creating many disconnected projects, new backend concepts are continuously integrated into MediaFlow to simulate how production software evolves over time.
 
----
-
-## API Workflow
-
-```
-Client
-   │
-   ▼
-Submit YouTube URL
-   │
-   ▼
-Validate URL
-   │
-   ▼
-Fetch Metadata
-   │
-   ▼
-Select Format
-   │
-   ▼
-Download Media
-   │
-   ▼
-Return Download Response
-```
-
----
-
-## Planned API Endpoints
-
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| POST | `/api/v1/analyze` | Retrieve video metadata |
-| POST | `/api/v1/download` | Download selected media |
-| GET | `/api/v1/formats` | List available formats |
-| GET | `/api/v1/history` | View download history |
-| GET | `/api/v1/health` | API health check |
-
----
-
-## Goals
-
-This project was built to strengthen backend engineering skills by exploring:
-
-- REST API Design
-- Python Service Architecture
-- Request Handling
-- File Processing Pipelines
-- Modular Code Organization
-- Backend Scalability
-
----
-
-## Status
-
-🚧 Currently being rebuilt with an improved architecture and additional backend features.
+Each feature reflects a practical learning milestone and contributes to a progressively more scalable and maintainable architecture.
